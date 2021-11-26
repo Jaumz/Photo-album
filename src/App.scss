@@ -1,0 +1,49 @@
+$global-green: #2FDD92 !important;
+$buttonColor: #2ecc71;
+$buttonDark: darken($buttonColor, 10%);
+$buttonDarker: darken($buttonDark, 10%);
+
+*{
+  color: $global-green;
+  &:hover {
+    color: #FFFFFF !important;
+  }
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(47, 221, 146, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.container {
+   padding: 20px !important;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+   border-radius: 30px !important;
+}
+
+input {
+  border-radius: 15px;
+  border: 1px solid $global-green;
+  &:focus {
+    border: 1px solid $global-green
+  }
+}
+
+.sbutton {
+  background: $buttonColor;
+  border-radius: 15px;
+  box-shadow: 0px 5px 0px $buttonDark;
+  border: 0;
+  color: #FFFFFF !important;
+  font-size: 17px;
+  padding: 10px 30px;
+  display: inline-block;
+  outline: 0;
+  &:hover {
+    background: $buttonDark;
+    box-shadow: 0px 5px 0px $buttonDarker;
+  }
+  &:active {
+    box-shadow: none;
+    margin-top: 5px;
+  }
+}
