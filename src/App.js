@@ -1,11 +1,13 @@
 import './App.scss';
+import GooglePexel from "./googlepexel.js";
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="https">
+          <a class="navbar-brand text-1" href="https">
             Photo album
           </a>
           <button
@@ -22,18 +24,18 @@ function App() {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="https">
+                <a class="nav-link text-2" href="https">
                   Home <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https">
+                <a class="nav-link text-3" href="https">
                   Link
                 </a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle text-4"
                   href="https"
                   id="navbarDropdown"
                   role="button"
@@ -44,20 +46,20 @@ function App() {
                   Dropdown
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="https">
+                  <a class="dropdown-item text-5" href="https">
                     Action
                   </a>
-                  <a class="dropdown-item" href="https">
+                  <a class="dropdown-item text-6" href="https">
                     Another action
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="https">
+                  <a class="dropdown-item text-7" href="https">
                     Something else here
                   </a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="https">
+                <a class="nav-link disabled text-8" href="https">
                   Disabled
                 </a>
               </li>
@@ -66,12 +68,7 @@ function App() {
         </nav>
       </header>
       <div class="container mt-5">
-        <div class="row">
-          <div class="col col-sm col-md -col-lg text-center">
-            <input type="text" class="col-lg-6 col-md-6"></input>
-            <button class="sbutton mt-2 ml-lg-2">Busca</button>
-          </div>
-        </div>
+        <GooglePexel></GooglePexel>
       </div>
     </div>
   );
