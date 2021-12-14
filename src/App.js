@@ -29,47 +29,46 @@ function App() {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-3" href="https">
-                  Link
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-4"
-                  href="https"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item text-5" href="https">
-                    Action
-                  </a>
-                  <a class="dropdown-item text-6" href="https">
-                    Another action
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item text-7" href="https">
-                    Something else here
-                  </a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled text-8" href="https">
-                  Disabled
+                <a class="nav-link text-3" href="https://leadster.com.br/" target="_blank" rel="noreferrer">
+                  Leadster
                 </a>
               </li>
             </ul>
           </div>
         </nav>
       </header>
-      <div class="container mt-5">
+      <div class="container mt-5 mb-5" id="container">
         <GooglePexel></GooglePexel>
       </div>
+      <footer class="container-fluid pt-5 bg-dark text-white">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <p>
+                <i></i> <strong>Email</strong>: assessoriacontabilre@gmail.com
+              </p>
+              <p>
+                <i></i> <strong>Telefone</strong>: (24) 99243-6035
+              </p>
+              <p>
+                <i></i> <strong>Endereço</strong>: Rua Sessenta, 487, Bairro
+                Sessenta, Volta Redonda - RJ
+              </p>
+            </div>
+            <div class="col-md-6 text-center">
+              <img class="img-fluid rounded" alt="" />
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-6">
+              <p>
+                <span>2021 - RE Assessoria Contábil</span>
+              </p>
+            </div>
+            <div class="col-md-6">Desenvolvido por </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
