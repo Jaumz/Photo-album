@@ -30,30 +30,50 @@ function GooglePexel() {
         })  
   
     }  
-    return (  
-        <form onSubmit={handleSubmit}>
-            <div className="row">
-                <div className="col-12 col-md-4 col-lg-4 mb-2">
-                    <input onChange={handleChange} className="AutoFocus form-control" placeholder="O que você quer ver?" type="text" />
-                </div>
-                <div className="col-12 col-md-4 col-lg-4 mb-2">
-                    <input onChange={quant_img} name="deliveryNumber" className="AutoFocus form-control" placeholder="E com quantas imagens nesse álbum?" type="text" />
-                </div>
-                <div className="col-md-4 col-lg-3 text-center mb-2">
-                    <button type="submit" value="Search">Buscar álbum</button>
-                </div>
+    return (
+      <form onSubmit={handleSubmit}>
+        <div className="row">
+          <div className="col-12 col-md-4 col-lg-4 mb-2">
+            <label>Digite o que você quer ver:</label>
+            <input
+              onChange={handleChange}
+              className="AutoFocus form-control"
+              placeholder="O que você quer ver?"
+              type="text"
+            />
+          </div>
+          <div className="col-12 col-md-4 col-lg-4 mb-2">
+            <label>E com quantas imagens?</label>
+            <input
+              onChange={quant_img}
+              name="deliveryNumber"
+              className="AutoFocus form-control"
+              placeholder="E com quantas imagens nesse álbum?"
+              type="text"
+            />
+          </div>
+          <div className="col-md-4 col-lg-3 text-center mt-4 mb-2">
+            <button type="submit" value="Search">
+              Buscar álbum
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          {result.map((search) => (
+            <div className="col-sm-4">
+              <div class="mt-2">
+                <img
+                  class="col-lg-10 mt-2 mb-2"
+                  variant="top"
+                  src={search.src.landscape}
+                  alt={search.photographer}
+                />
+              </div>
             </div>
-                <div class="row">
-                    {result.map(search => (  
-                        <div className="col-sm-4">  
-                            <div class="mt-2">  
-                                <img class="col-lg-10 mt-2 mb-2" variant="top" src={search.src.landscape} alt={search.photographer} />  
-                            </div>  
-                        </div>  
-                    ))}  
-            </div>
-        </form>
-    )  
+          ))}
+        </div>
+      </form>
+    );  
 }  
   
 export default GooglePexel  
